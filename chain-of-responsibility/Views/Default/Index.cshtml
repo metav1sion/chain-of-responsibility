@@ -1,0 +1,30 @@
+﻿@model CustomerViewModel
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+<div class="container">
+    <br/><br/>
+    <div class="alert alert-info"><h3>Kredi Çekme İşlemi</h3></div>
+    <form method="post">
+        <label>Müşteri Adı</label>
+        <input type="text" asp-for="Name" class="form-control"/>
+        <br/>
+        
+        <label>Kredi Tutarı</label>
+        <input type="text" asp-for="Amount" class="form-control"/>
+        <br/>
+        <button class="btn btn-info">İşlemi Gerçekleştir</button>
+    </form>
+</div>
+</body>
+</html>
